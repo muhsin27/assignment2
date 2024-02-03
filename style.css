@@ -31,6 +31,7 @@ body > div {
 @media (max-width: 575px) {
   ul {
     flex-direction: column;
+    text-align: center;
   }
   .head {
     flex-direction: column;
