@@ -6,17 +6,16 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 5px;
 }
-head {
+body > div {
+  width: 100%;
+}
+.header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-
-  flex-shrink: 0;
+  justify-content: space-around;
 }
 .head {
   display: flex;
@@ -25,15 +24,48 @@ head {
   padding: 20px 24px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px 90px;
   border-radius: 20px;
   background-color: #2a2c2e;
-  flex-shrink: 0;
+}
+@media (max-width: 575px) {
+  ul {
+    flex-direction: column;
+  }
+  .head {
+    flex-direction: column;
+    width: 100vw;
+    height: 60vh;
+  }
+  .upfoot {
+    flex-direction: column;
+  }
+  .downfoot {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 ul {
   display: flex;
   gap: 20px;
   list-style-type: none;
+  color: #fff;
+}
+a {
+  all: unset;
+  cursor: pointer;
+}
+.login {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+button {
+  all: unset;
+  background-color: #f4ce47;
+  cursor: pointer;
+  padding: 16px 28px;
+  border-radius: 10px;
 }
 .banner {
   display: flex;
@@ -45,14 +77,18 @@ ul {
   background: #f4ce47;
   overflow: hidden;
 }
+.banner p {
+  color: #d4a600;
+}
 
 .main {
   display: flex;
-  max-width: 1729px;
+  max-width: 100%;
   background: #2a2c2e;
   justify-content: center;
   gap: 8px;
   flex-wrap: wrap;
+  flex-grow: 1;
 }
 .card {
   display: flex;
@@ -73,11 +109,12 @@ ul {
 }
 .footer {
   display: flex;
-  width: 100%;
+  max-width: 1200px;
   flex-direction: column;
   justify-content: space-between;
   background-color: black;
   color: #ffffff;
+  border-radius: 4px;
 }
 .socmed img {
   width: 24px;
@@ -89,8 +126,11 @@ ul {
   align-items: center;
   flex-shrink: 0;
   background: #2a2c2e;
+  border-radius: 4px;
+  padding: 0 8px;
 }
 .downfoot {
   display: flex;
   justify-content: space-between;
+  padding: 0 8px;
 }
