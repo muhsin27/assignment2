@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <div class="header">
+      <div class="head">
+        <img src="pic/logo.png" alt="logo" />
+      </div>
+    </div>
+    <fieldset>
+      <form method="post" action="form.html">
+        <h2>REGISTER YOUR BOOK</h2>
+
+        <h3>Book Details</h3>
+        <hr />
+        <label for="title">Title </label>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          placeholder="Your book title here E.g. Harry Potter "
+        />
+        <br />
+        <label for="genre">Genre </label>
+        <select name="genre" id="genre">
+          <option value="Fiction">Fiction</option>
+          <option value="Non-fiction">Non-fiction</option>
+          <option value="Poetry">Poetry</option>
+          <option value="Drama">Drama</option>
+          <option value="Mystery/Thriller">Mystery/Thriller</option>
+          <option value="Romance">Romance</option>
+          <option value="Historical">Historical</option>
+          <option value="Motivational">Motivational</option>
+          <option value="Comic">Comic</option>
+          <option value="Travel">Travel</option>
+          <option value="Cookbooks">Cookbooks</option>
+          <option value="Religion">Religion</option>
+        </select>
+        <br />
+        <label for="author">Author </label>
+        <input
+          type="text"
+          id="author"
+          name="author"
+          placeholder="Your book author name E.g A. Samad Said"
+        />
+        <br />
+        <label for="publisher">Publisher </label>
+        <input
+          type="text"
+          name="publisher"
+          id="publisher"
+          placeholder="Publisher of the book E.g Dewan Pustaka"
+        />
+        <br />
+        <label for="year">Year Published </label>
+        <input type="month" name="year" id="year" placeholder="1997" /><br />
+        <label for="availability" class="availability">
+          Availability
+          <input
+            type="radio"
+            name="availability"
+            id="online"
+            class="availability"
+          />Online
+
+          <input
+            type="radio"
+            name="availability"
+            id="in-store"
+            class="availability"
+          />In-Store
+          <input
+            type="radio"
+            name="availability"
+            id="onlineAndIn-store"
+            class="availability"
+          />Online and In-Store
+        </label>
+        <br />
+        <label for="pages">Pages </label>
+        <input type="number" name="pages" id="pages" />
+        <br />
+        <label for="language">Language </label>
+        <input
+          type="text"
+          name="language"
+          id="language"
+          placeholder="Language used in book E.g English"
+        />
+        <br />
+        <h3>Registree Details</h3>
+        <hr />
+        <label for="name">Name </label>
+        <input type="text" name="name" id="name" placeholder="Your Full Name" />
+        <br />
+        <label for="email">E-mail </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="abc123@example.com"
+        />
+        <br />
+        <label for="confirmation" class="confirmation">
+          <input
+            type="checkbox"
+            name="confirmation"
+            id="confirmation"
+            class="confirmation"
+            required
+            checked
+          />
+          I hereby agree to follow all rules and confirmed that all details are
+          accurate
+        </label>
+        <br />
+        <button type="submit">SAVE YOUR BOOK</button>
+      </form>
+    </fieldset>
+
+    <div class="footer">
+      <div class="upfoot">
+        <div><img src="pic/logo.png" alt="logo" /></div>
+        <div class="socmed">
+          <img src="pic/insta.png" alt="insta" />
+          <img src="pic/fb.png" alt="fb" />
+          <img src="pic/twitter.png" alt="twt" />
+        </div>
+      </div>
+      <div class="downfoot">
+        <p>Term and conditions</p>
+        <p>Privacy policy</p>
+        <p>+0123456789</p>
+        <p>support@bbookshelf.com</p>
+      </div>
+    </div>
+  </body>
+</html>
