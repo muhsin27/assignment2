@@ -80,6 +80,7 @@ button {
 }
 .banner p {
   color: #d4a600;
+  white-space: nowrap;
 }
 
 .main {
