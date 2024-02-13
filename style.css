@@ -136,3 +136,10 @@ button {
   justify-content: space-between;
   padding: 0 8px;
 }
+.line {
+  display: inline-block;
+  width: 50px; /* Adjust width as needed */
+  height: 1px; /* Adjust thickness as needed */
+  background-color: black; /* Adjust color as needed */
+  margin-left: 10px; /* Adjust spacing from text */
+}

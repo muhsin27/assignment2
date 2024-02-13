@@ -105,3 +105,19 @@ select {
   align-items: center;
   justify-content: space-around;
 }
+.line {
+  display: inline-block;
+  width: 584px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+.linee {
+  display: inline-block;
+  width: 544px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
